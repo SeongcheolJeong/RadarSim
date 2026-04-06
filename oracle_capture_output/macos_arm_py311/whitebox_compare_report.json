@@ -1,0 +1,3690 @@
+{
+  "candidate_module_name": "radarsimpy_whitebox",
+  "candidate_version": "15.1.0",
+  "comparisons": {
+    "license": {
+      "get_license_info_is_str": true,
+      "is_licensed_match": true,
+      "overall": true,
+      "set_license_none_match": true
+    },
+    "sim_lidar": {
+      "baseline": {
+        "candidate_fields": [
+          "positions",
+          "origins",
+          "directions",
+          "distance",
+          "phi",
+          "theta",
+          "target_index"
+        ],
+        "length_match": true,
+        "overall": true,
+        "shared_field_allclose": {
+          "directions": true,
+          "positions": true
+        },
+        "shared_fields": [
+          "positions",
+          "directions"
+        ],
+        "vendor_fields": [
+          "positions",
+          "directions"
+        ]
+      },
+      "moving": {
+        "available": true,
+        "candidate_fields": [
+          "positions",
+          "origins",
+          "directions",
+          "distance",
+          "phi",
+          "theta",
+          "target_index"
+        ],
+        "length_match": true,
+        "overall": true,
+        "shared_field_allclose": {
+          "directions": true,
+          "positions": true
+        },
+        "shared_fields": [
+          "positions",
+          "directions"
+        ],
+        "vendor_fields": [
+          "positions",
+          "directions"
+        ]
+      },
+      "multi_hit": {
+        "available": true,
+        "candidate_distances": [
+          10.04987562112089,
+          10.0,
+          10.04987562112089
+        ],
+        "candidate_fields": [
+          "positions",
+          "origins",
+          "directions",
+          "distance",
+          "phi",
+          "theta",
+          "target_index"
+        ],
+        "candidate_y_positions": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "derived_distance_match": true,
+        "length_match": true,
+        "oracle_distances": [
+          10.049876570062313,
+          10.000000000000009,
+          10.049876570062313
+        ],
+        "oracle_y_positions": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "overall": true,
+        "shared_field_allclose": {
+          "directions": true,
+          "positions": true
+        },
+        "shared_fields": [
+          "positions",
+          "directions"
+        ],
+        "vendor_fields": [
+          "positions",
+          "directions"
+        ],
+        "y_order_match": true
+      },
+      "overall": true
+    },
+    "sim_radar": {
+      "baseband_allclose": true,
+      "baseband_dtype_match": true,
+      "baseband_max_abs": 4.99667662804634e-07,
+      "baseband_shape_match": true,
+      "candidate_interference_none": true,
+      "dry_run": {
+        "candidate_interference_none": true,
+        "candidate_zero_match": true,
+        "oracle_interference_none": true,
+        "overall": true
+      },
+      "dry_run_zero_match": true,
+      "mesh_aspect": {
+        "available": true,
+        "candidate_broadside_max_abs": 0.00010053466328639067,
+        "candidate_edge_on_max_abs": 3.769108820803522e-37,
+        "oracle_broadside_max_abs": 1.8897375568949118e-05,
+        "oracle_edge_on_max_abs": 0.0,
+        "overall": true,
+        "trend_match": true
+      },
+      "mesh_target": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_interference_none": true,
+        "candidate_nonzero": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_interference_none": true,
+        "oracle_nonzero": true,
+        "overall": true,
+        "power_ratio_candidate_over_oracle": 27.972212365849643,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9937356354445475,
+        "waveform_correlation_pass": true
+      },
+      "noise_dtype_match": true,
+      "noise_shape_match": true,
+      "oracle_interference_none": true,
+      "overall": true,
+      "point_mimo": {
+        "available": true,
+        "baseband_allclose": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_interference_none": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_interference_none": true,
+        "overall": true,
+        "timestamp_exact": true
+      },
+      "point_mimo_multiframe": {
+        "available": true,
+        "baseband_allclose": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_frame_offset_exact": true,
+        "candidate_interference_none": true,
+        "frame_block_size": 4,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_frame_offset_exact": true,
+        "oracle_interference_none": true,
+        "overall": true,
+        "timestamp_exact": true
+      },
+      "point_mimo_offaxis": {
+        "available": true,
+        "baseband_allclose": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_channel_phase_degrees": [
+          3.2362686223625385e-17,
+          -53.926638390785996,
+          -88.96560788403458,
+          -142.89224628816078
+        ],
+        "candidate_interference_none": true,
+        "candidate_peak_sample_index": 2,
+        "channel_phase_allclose": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_channel_phase_degrees": [
+          1.529153350323401e-17,
+          -53.92663720684207,
+          -88.96560917636774,
+          -142.89224639321498
+        ],
+        "oracle_interference_none": true,
+        "oracle_peak_sample_index": 2,
+        "overall": true,
+        "peak_sample_index_exact": true,
+        "timestamp_exact": true
+      },
+      "point_mimo_offaxis_moving": {
+        "available": true,
+        "baseband_allclose": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_channel_phase_degrees": [
+          -1.1825096519354573e-17,
+          -53.92663407856207,
+          -88.96560076869835,
+          -142.89223486060064
+        ],
+        "candidate_doppler_peak": 1,
+        "candidate_interference_none": true,
+        "candidate_phase_sample_index": 2,
+        "candidate_range_peak": 67,
+        "channel_phase_allclose": true,
+        "doppler_peak_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_channel_phase_degrees": [
+          1.4615999853798485e-17,
+          -53.926632892950614,
+          -88.96560206436656,
+          -142.89223496898987
+        ],
+        "oracle_doppler_peak": 1,
+        "oracle_interference_none": true,
+        "oracle_phase_sample_index": 2,
+        "oracle_range_peak": 67,
+        "overall": true,
+        "range_peak_exact": true,
+        "timestamp_exact": true
+      },
+      "point_mimo_offaxis_moving_multiframe": {
+        "available": true,
+        "baseband_allclose": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_doppler_peak": 1,
+        "candidate_frame0_channel_phase_degrees": [
+          -1.1825096519354573e-17,
+          -53.92663407856207,
+          -88.96560076869835,
+          -142.89223486060064
+        ],
+        "candidate_frame_offset_exact": true,
+        "candidate_interference_none": true,
+        "candidate_range_peak": 67,
+        "channel_phase_allclose": true,
+        "doppler_peak_exact": true,
+        "frame_block_size": 4,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_doppler_peak": 1,
+        "oracle_frame0_channel_phase_degrees": [
+          1.4615999853798485e-17,
+          -53.926632892950614,
+          -88.96560206436656,
+          -142.89223496898987
+        ],
+        "oracle_frame_offset_exact": true,
+        "oracle_interference_none": true,
+        "oracle_range_peak": 67,
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_peak_exact": true,
+        "timestamp_exact": true
+      },
+      "point_mimo_offaxis_moving_negative": {
+        "available": true,
+        "baseband_allclose": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_channel_phase_degrees": [
+          -1.041236968035128e-16,
+          -53.92664270300991,
+          -88.96561499770328,
+          -142.89225771572094
+        ],
+        "candidate_doppler_peak": 3,
+        "candidate_interference_none": true,
+        "candidate_phase_sample_index": 2,
+        "candidate_range_peak": 67,
+        "channel_phase_allclose": true,
+        "doppler_peak_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_channel_phase_degrees": [
+          1.8272289833643288e-16,
+          -53.926641517398465,
+          -88.96561629170397,
+          -142.89225782077511
+        ],
+        "oracle_doppler_peak": 3,
+        "oracle_interference_none": true,
+        "oracle_phase_sample_index": 2,
+        "oracle_range_peak": 67,
+        "overall": true,
+        "range_peak_exact": true,
+        "timestamp_exact": true
+      },
+      "point_mimo_offaxis_moving_negative_multiframe": {
+        "available": true,
+        "baseband_allclose": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_doppler_peak": 3,
+        "candidate_frame0_channel_phase_degrees": [
+          -1.041236968035128e-16,
+          -53.92664270300991,
+          -88.96561499770328,
+          -142.89225771572094
+        ],
+        "candidate_frame_offset_exact": true,
+        "candidate_interference_none": true,
+        "candidate_range_peak": 67,
+        "channel_phase_allclose": true,
+        "doppler_peak_exact": true,
+        "frame_block_size": 4,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_doppler_peak": 3,
+        "oracle_frame0_channel_phase_degrees": [
+          1.8272289833643288e-16,
+          -53.926641517398465,
+          -88.96561629170397,
+          -142.89225782077511
+        ],
+        "oracle_frame_offset_exact": true,
+        "oracle_interference_none": true,
+        "oracle_range_peak": 67,
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_peak_exact": true,
+        "timestamp_exact": true
+      },
+      "point_mimo_offaxis_static_moving": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_channel_phase_degrees": [
+          -1.2318470547208068e-15,
+          -0.747454784891348,
+          5.965581066765145,
+          17.884956971692066
+        ],
+        "candidate_interference_none": true,
+        "candidate_moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "candidate_static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_channel_phase_degrees": [
+          -4.214865258902181e-16,
+          -0.7474548457108571,
+          5.965581547660788,
+          17.884957206668552
+        ],
+        "oracle_interference_none": true,
+        "oracle_moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "oracle_static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.9996723742956213,
+        "range_profile_correlation_pass": true,
+        "static_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9968094825976482,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_moving_multiframe": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_frame0_channel_phase_degrees": [
+          -1.2318470547208068e-15,
+          -0.747454784891348,
+          5.965581066765145,
+          17.884956971692066
+        ],
+        "candidate_frame_offset_exact": true,
+        "candidate_interference_none": true,
+        "candidate_moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "candidate_static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_frame0_channel_phase_degrees": [
+          -4.214865258902181e-16,
+          -0.7474548457108571,
+          5.965581547660788,
+          17.884957206668552
+        ],
+        "oracle_frame_offset_exact": true,
+        "oracle_interference_none": true,
+        "oracle_moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "oracle_static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.9996723742956213,
+        "range_profile_correlation_pass": true,
+        "static_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9968087085719131,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_moving_negative": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_channel_phase_degrees": [
+          -1.0222298706954522e-15,
+          -0.5648440953183109,
+          6.31943702991571,
+          18.283304673556557
+        ],
+        "candidate_interference_none": true,
+        "candidate_moving_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "candidate_static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_channel_phase_degrees": [
+          6.388272732877847e-16,
+          -0.5648441608652288,
+          6.3194375167001064,
+          18.28330490484372
+        ],
+        "oracle_interference_none": true,
+        "oracle_moving_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "oracle_static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.9996517079664293,
+        "range_profile_correlation_pass": true,
+        "static_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9967881539866473,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_moving_negative_multiframe": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_frame0_channel_phase_degrees": [
+          -1.0222298706954522e-15,
+          -0.5648440953183109,
+          6.31943702991571,
+          18.283304673556557
+        ],
+        "candidate_frame_offset_exact": true,
+        "candidate_interference_none": true,
+        "candidate_moving_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "candidate_static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_frame0_channel_phase_degrees": [
+          6.388272732877847e-16,
+          -0.5648441608652288,
+          6.3194375167001064,
+          18.28330490484372
+        ],
+        "oracle_frame_offset_exact": true,
+        "oracle_interference_none": true,
+        "oracle_moving_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "oracle_static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.9996517079664293,
+        "range_profile_correlation_pass": true,
+        "static_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9967911962044761,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_static_mixed_sign": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_channel_phase_degrees": [
+          1.4475740224530975e-15,
+          75.94318549215149,
+          -70.98458971277205,
+          11.577133530898656
+        ],
+        "candidate_interference_none": true,
+        "candidate_moving_neg_peaks": [
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ]
+        ],
+        "candidate_moving_pos_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "candidate_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "candidate_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_neg_peaks_exact": true,
+        "moving_pos_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_channel_phase_degrees": [
+          4.243375776099334e-16,
+          75.94319054230907,
+          -70.98459559755906,
+          11.577133180299716
+        ],
+        "oracle_interference_none": true,
+        "oracle_moving_neg_peaks": [
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ]
+        ],
+        "oracle_moving_pos_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "oracle_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "oracle_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.999168832586504,
+        "range_profile_correlation_pass": true,
+        "static_a_peaks_exact": true,
+        "static_b_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9968082526669342,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_static_mixed_sign_multiframe": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_frame0_channel_phase_degrees": [
+          1.4475740224530975e-15,
+          75.94318549215149,
+          -70.98458971277205,
+          11.577133530898656
+        ],
+        "candidate_frame_offset_exact": true,
+        "candidate_interference_none": true,
+        "candidate_moving_neg_peaks": [
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ]
+        ],
+        "candidate_moving_pos_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "candidate_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "candidate_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_neg_peaks_exact": true,
+        "moving_pos_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_frame0_channel_phase_degrees": [
+          4.243375776099334e-16,
+          75.94319054230907,
+          -70.98459559755906,
+          11.577133180299716
+        ],
+        "oracle_frame_offset_exact": true,
+        "oracle_interference_none": true,
+        "oracle_moving_neg_peaks": [
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ]
+        ],
+        "oracle_moving_pos_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "oracle_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "oracle_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.999168832586504,
+        "range_profile_correlation_pass": true,
+        "static_a_peaks_exact": true,
+        "static_b_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9968097868925435,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_static_moving": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_channel_phase_degrees": [
+          -3.838122870930237e-16,
+          -0.09066664162612409,
+          9.256199654652802,
+          24.715774779843123
+        ],
+        "candidate_interference_none": true,
+        "candidate_moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "candidate_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "candidate_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_channel_phase_degrees": [
+          1.0618164105514601e-15,
+          -0.09066677526626975,
+          9.256200117755256,
+          24.715774676600905
+        ],
+        "oracle_interference_none": true,
+        "oracle_moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "oracle_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "oracle_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.9995014284759554,
+        "range_profile_correlation_pass": true,
+        "static_a_peaks_exact": true,
+        "static_b_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9960588587026931,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_static_moving_moving": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_channel_phase_degrees": [
+          -9.205349154574006e-16,
+          75.82025430183978,
+          -70.99194881041487,
+          11.469166117098649
+        ],
+        "candidate_interference_none": true,
+        "candidate_moving_a_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "candidate_moving_b_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "candidate_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "candidate_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_a_peaks_exact": true,
+        "moving_b_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_channel_phase_degrees": [
+          1.1814056866520706e-15,
+          75.8202593486482,
+          -70.99195468837051,
+          11.469165766290795
+        ],
+        "oracle_interference_none": true,
+        "oracle_moving_a_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "oracle_moving_b_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "oracle_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "oracle_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.9991979183848831,
+        "range_profile_correlation_pass": true,
+        "static_a_peaks_exact": true,
+        "static_b_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9967190243596956,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_static_moving_moving_multiframe": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_frame0_channel_phase_degrees": [
+          -9.205349154574006e-16,
+          75.82025430183978,
+          -70.99194881041487,
+          11.469166117098649
+        ],
+        "candidate_frame_offset_exact": true,
+        "candidate_interference_none": true,
+        "candidate_moving_a_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "candidate_moving_b_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "candidate_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "candidate_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_a_peaks_exact": true,
+        "moving_b_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_frame0_channel_phase_degrees": [
+          1.1814056866520706e-15,
+          75.8202593486482,
+          -70.99195468837051,
+          11.469165766290795
+        ],
+        "oracle_frame_offset_exact": true,
+        "oracle_interference_none": true,
+        "oracle_moving_a_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "oracle_moving_b_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "oracle_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "oracle_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.9991979183848831,
+        "range_profile_correlation_pass": true,
+        "static_a_peaks_exact": true,
+        "static_b_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9967195885119193,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_static_moving_moving_negative_multiframe": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_frame0_channel_phase_degrees": [
+          1.2172776995762716e-17,
+          75.71872736176792,
+          -71.30602121892858,
+          11.498829863890133
+        ],
+        "candidate_frame_offset_exact": true,
+        "candidate_interference_none": true,
+        "candidate_moving_a_peaks": [
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ]
+        ],
+        "candidate_moving_b_peaks": [
+          [
+            3,
+            66
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            66
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "candidate_moving_b_peaks_in_accepted_band": true,
+        "candidate_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "candidate_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_a_peaks_exact": true,
+        "moving_b_peaks_exact": false,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_frame0_channel_phase_degrees": [
+          1.5074645011474394e-15,
+          75.71873238188022,
+          -71.30602714504644,
+          11.49882951433232
+        ],
+        "oracle_frame_offset_exact": true,
+        "oracle_interference_none": true,
+        "oracle_moving_a_peaks": [
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ]
+        ],
+        "oracle_moving_b_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "oracle_moving_b_peaks_in_accepted_band": true,
+        "oracle_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "oracle_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.9993315554683547,
+        "range_profile_correlation_pass": true,
+        "static_a_peaks_exact": true,
+        "static_b_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9966803404948342,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_static_moving_multiframe": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_frame0_channel_phase_degrees": [
+          -3.838122870930237e-16,
+          -0.09066664162612409,
+          9.256199654652802,
+          24.715774779843123
+        ],
+        "candidate_frame_offset_exact": true,
+        "candidate_interference_none": true,
+        "candidate_moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "candidate_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "candidate_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_frame0_channel_phase_degrees": [
+          1.0618164105514601e-15,
+          -0.09066677526626975,
+          9.256200117755256,
+          24.715774676600905
+        ],
+        "oracle_frame_offset_exact": true,
+        "oracle_interference_none": true,
+        "oracle_moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "oracle_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "oracle_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.9995014284759554,
+        "range_profile_correlation_pass": true,
+        "static_a_peaks_exact": true,
+        "static_b_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9960586560279554,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_static_moving_negative": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_channel_phase_degrees": [
+          2.7798302397768333e-16,
+          0.15972158310049353,
+          9.734548494098894,
+          25.16030892788764
+        ],
+        "candidate_interference_none": true,
+        "candidate_moving_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "candidate_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "candidate_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_channel_phase_degrees": [
+          3.0006615125908375e-17,
+          0.1597214391665704,
+          9.734548956940225,
+          25.160308817160956
+        ],
+        "oracle_interference_none": true,
+        "oracle_moving_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "oracle_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "oracle_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.999464699871756,
+        "range_profile_correlation_pass": true,
+        "static_a_peaks_exact": true,
+        "static_b_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9960395917815733,
+        "waveform_correlation_pass": true
+      },
+      "point_mimo_offaxis_static_static_moving_negative_multiframe": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_frame0_channel_phase_degrees": [
+          2.7798302397768333e-16,
+          0.15972158310049353,
+          9.734548494098894,
+          25.16030892788764
+        ],
+        "candidate_frame_offset_exact": true,
+        "candidate_interference_none": true,
+        "candidate_moving_peaks": [
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ]
+        ],
+        "candidate_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "candidate_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "channel_phase_allclose": true,
+        "moving_peaks_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_frame0_channel_phase_degrees": [
+          3.0006615125908375e-17,
+          0.1597214391665704,
+          9.734548956940225,
+          25.160308817160956
+        ],
+        "oracle_frame_offset_exact": true,
+        "oracle_interference_none": true,
+        "oracle_moving_peaks": [
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ],
+          [
+            5,
+            67
+          ]
+        ],
+        "oracle_static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "oracle_static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "overall": true,
+        "phase_sample_index": 2,
+        "range_profile_correlation_abs": 0.999464699871756,
+        "range_profile_correlation_pass": true,
+        "static_a_peaks_exact": true,
+        "static_b_peaks_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.996042871801679,
+        "waveform_correlation_pass": true
+      },
+      "point_moving_doppler": {
+        "available": true,
+        "baseband_allclose": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_doppler_peak": 1,
+        "candidate_interference_none": true,
+        "candidate_range_peak": 67,
+        "doppler_peak_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_doppler_peak": 1,
+        "oracle_interference_none": true,
+        "oracle_range_peak": 67,
+        "overall": true,
+        "range_peak_exact": true,
+        "timestamp_exact": true
+      },
+      "point_moving_doppler_negative": {
+        "available": true,
+        "baseband_allclose": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_doppler_peak": 3,
+        "candidate_interference_none": true,
+        "candidate_range_peak": 67,
+        "doppler_peak_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_doppler_peak": 3,
+        "oracle_interference_none": true,
+        "oracle_range_peak": 67,
+        "overall": true,
+        "range_peak_exact": true,
+        "timestamp_exact": true
+      },
+      "point_multi": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_interference_none": true,
+        "candidate_top_bins": [
+          27,
+          26,
+          47,
+          28,
+          25,
+          29
+        ],
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_interference_none": true,
+        "oracle_top_bins": [
+          27,
+          26,
+          47,
+          28,
+          25,
+          29
+        ],
+        "overall": true,
+        "profile_correlation_abs": 0.9990901742651805,
+        "profile_correlation_pass": true,
+        "timestamp_exact": true,
+        "top_bins_exact": true,
+        "waveform_correlation_abs": 0.9961332592115709,
+        "waveform_correlation_pass": true
+      },
+      "point_phase": {
+        "available": true,
+        "baseband_allclose": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_interference_none": true,
+        "candidate_quadrature": {
+          "expected_close": true,
+          "max_abs_error_to_expected": 2.356752195068224e-16,
+          "mean_ratio_imag": 1.0,
+          "mean_ratio_real": 5.938953487766525e-17,
+          "sample_count": 632
+        },
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_interference_none": true,
+        "oracle_quadrature": {
+          "expected_close": true,
+          "max_abs_error_to_expected": 4.3711390098543514e-08,
+          "mean_ratio_imag": 0.999999999999999,
+          "mean_ratio_real": -4.371139000132187e-08,
+          "sample_count": 640
+        },
+        "overall": true,
+        "timestamp_exact": true
+      },
+      "point_static_moving": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_interference_none": true,
+        "candidate_moving_peak": [
+          1,
+          67
+        ],
+        "candidate_static_peak": [
+          0,
+          27
+        ],
+        "moving_peak_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_interference_none": true,
+        "oracle_moving_peak": [
+          1,
+          67
+        ],
+        "oracle_static_peak": [
+          0,
+          27
+        ],
+        "overall": true,
+        "range_profile_correlation_abs": 0.9996548786185343,
+        "range_profile_correlation_pass": true,
+        "static_peak_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9968084470896887,
+        "waveform_correlation_pass": true
+      },
+      "point_static_moving_negative": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_interference_none": true,
+        "candidate_moving_peak": [
+          3,
+          67
+        ],
+        "candidate_static_peak": [
+          0,
+          27
+        ],
+        "moving_peak_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_interference_none": true,
+        "oracle_moving_peak": [
+          3,
+          67
+        ],
+        "oracle_static_peak": [
+          0,
+          27
+        ],
+        "overall": true,
+        "range_profile_correlation_abs": 0.9995443105868608,
+        "range_profile_correlation_pass": true,
+        "static_peak_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.996765735882132,
+        "waveform_correlation_pass": true
+      },
+      "point_static_static_moving": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_interference_none": true,
+        "candidate_moving_peak": [
+          1,
+          67
+        ],
+        "candidate_static_a_peak": [
+          0,
+          27
+        ],
+        "candidate_static_b_peak": [
+          0,
+          47
+        ],
+        "moving_peak_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_interference_none": true,
+        "oracle_moving_peak": [
+          1,
+          67
+        ],
+        "oracle_static_a_peak": [
+          0,
+          27
+        ],
+        "oracle_static_b_peak": [
+          0,
+          47
+        ],
+        "overall": true,
+        "range_profile_correlation_abs": 0.9994006040790182,
+        "range_profile_correlation_pass": true,
+        "static_a_peak_exact": true,
+        "static_b_peak_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9960996742725728,
+        "waveform_correlation_pass": true
+      },
+      "point_static_static_moving_moving": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_interference_none": true,
+        "candidate_moving_a_peak": [
+          1,
+          14
+        ],
+        "candidate_moving_b_peak": [
+          1,
+          67
+        ],
+        "candidate_static_a_peak": [
+          0,
+          27
+        ],
+        "candidate_static_b_peak": [
+          0,
+          47
+        ],
+        "moving_a_peak_exact": true,
+        "moving_b_peak_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_interference_none": true,
+        "oracle_moving_a_peak": [
+          1,
+          14
+        ],
+        "oracle_moving_b_peak": [
+          1,
+          67
+        ],
+        "oracle_static_a_peak": [
+          0,
+          27
+        ],
+        "oracle_static_b_peak": [
+          0,
+          47
+        ],
+        "overall": true,
+        "range_profile_correlation_abs": 0.9993784555253341,
+        "range_profile_correlation_pass": true,
+        "static_a_peak_exact": true,
+        "static_b_peak_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9970342786502426,
+        "waveform_correlation_pass": true
+      },
+      "point_static_static_moving_moving_negative": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_interference_none": true,
+        "candidate_moving_a_peak": [
+          3,
+          13
+        ],
+        "candidate_moving_b_peak": [
+          3,
+          66
+        ],
+        "candidate_static_a_peak": [
+          0,
+          27
+        ],
+        "candidate_static_b_peak": [
+          0,
+          47
+        ],
+        "moving_a_peak_exact": true,
+        "moving_b_peak_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_interference_none": true,
+        "oracle_moving_a_peak": [
+          3,
+          13
+        ],
+        "oracle_moving_b_peak": [
+          3,
+          66
+        ],
+        "oracle_static_a_peak": [
+          0,
+          27
+        ],
+        "oracle_static_b_peak": [
+          0,
+          47
+        ],
+        "overall": true,
+        "range_profile_correlation_abs": 0.9990993396242466,
+        "range_profile_correlation_pass": true,
+        "static_a_peak_exact": true,
+        "static_b_peak_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9971176299299678,
+        "waveform_correlation_pass": true
+      },
+      "point_static_static_moving_negative": {
+        "available": true,
+        "baseband_dtype_match": true,
+        "baseband_shape_match": true,
+        "candidate_interference_none": true,
+        "candidate_moving_peak": [
+          3,
+          67
+        ],
+        "candidate_static_a_peak": [
+          0,
+          27
+        ],
+        "candidate_static_b_peak": [
+          0,
+          47
+        ],
+        "moving_peak_exact": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_interference_none": true,
+        "oracle_moving_peak": [
+          3,
+          67
+        ],
+        "oracle_static_a_peak": [
+          0,
+          27
+        ],
+        "oracle_static_b_peak": [
+          0,
+          47
+        ],
+        "overall": true,
+        "range_profile_correlation_abs": 0.9993028065217125,
+        "range_profile_correlation_pass": true,
+        "static_a_peak_exact": true,
+        "static_b_peak_exact": true,
+        "timestamp_exact": true,
+        "waveform_correlation_abs": 0.9960523945436105,
+        "waveform_correlation_pass": true
+      },
+      "point_target": {
+        "baseband_allclose": true,
+        "baseband_dtype_match": true,
+        "baseband_max_abs": 4.99667662804634e-07,
+        "baseband_shape_match": true,
+        "candidate_interference_none": true,
+        "noise_dtype_match": true,
+        "noise_shape_match": true,
+        "oracle_interference_none": true,
+        "overall": true,
+        "timestamp_exact": true
+      },
+      "point_target_overall": true,
+      "seed_repeat": {
+        "match": true,
+        "overall": true
+      },
+      "seed_repeat_match": true,
+      "timestamp_exact": true
+    },
+    "sim_rcs": {
+      "cases": {
+        "broadside": {
+          "available": true,
+          "candidate": 828991.177299832,
+          "match": true,
+          "oracle": 824775.9281763812,
+          "overall": true,
+          "relative_error": 0.005110780976320382
+        },
+        "edge_on": {
+          "available": true,
+          "candidate": 1.1653954891244822e-59,
+          "match": true,
+          "oracle": 0.0,
+          "overall": true,
+          "relative_error": 1.1653954891244822e-59
+        },
+        "normal_incidence": {
+          "available": true,
+          "candidate": 0.0,
+          "match": true,
+          "oracle": 0.0,
+          "overall": true,
+          "relative_error": 0.0
+        },
+        "obs_backscatter": {
+          "available": true,
+          "candidate": 828991.177299832,
+          "match": true,
+          "oracle": 824775.9281763812,
+          "overall": true,
+          "relative_error": 0.005110780976320382
+        },
+        "obs_forwardscatter": {
+          "available": true,
+          "candidate": 0.0,
+          "match": true,
+          "oracle": 0.0,
+          "overall": true,
+          "relative_error": 0.0
+        }
+      },
+      "observation_trend_match": true,
+      "overall": true,
+      "polarization": {
+        "available": true,
+        "candidate_co_pol_gt_cross": true,
+        "candidate_cross_quiet": true,
+        "candidate_cross_ratio": 0.0,
+        "case_names_exact": true,
+        "co_pol_close": true,
+        "oracle_co_pol_gt_cross": true,
+        "oracle_cross_quiet": true,
+        "oracle_cross_ratio": 3.749399456654644e-33,
+        "overall": true,
+        "shape_match": true
+      },
+      "sweep": {
+        "angle_exact": true,
+        "available": true,
+        "candidate_first_segment_monotonic": true,
+        "candidate_tail_quiet": true,
+        "candidate_tail_to_peak_ratio": 4.667888182415944e-34,
+        "oracle_first_segment_monotonic": true,
+        "oracle_tail_quiet": true,
+        "oracle_tail_to_peak_ratio": 3.7769819272503284e-07,
+        "overall": true,
+        "peak_index_match": true,
+        "shape_match": true,
+        "waveform_correlation_abs": 0.8776934240265365,
+        "waveform_correlation_pass": true
+      },
+      "trend_match": true
+    }
+  },
+  "oracle_module_name": "radarsimpy",
+  "oracle_version": "15.1.0",
+  "overall": true,
+  "scenario_results": {
+    "LIDAR-001": {
+      "available": true,
+      "compare_ref": "comparisons.sim_lidar.baseline.overall",
+      "family": "sim_lidar",
+      "overall": true,
+      "status": "matched",
+      "title": "Baseline LiDAR point-cloud contract"
+    },
+    "LIDAR-002": {
+      "available": true,
+      "compare_ref": "comparisons.sim_lidar.moving.overall",
+      "family": "sim_lidar",
+      "overall": true,
+      "status": "matched",
+      "title": "Frame-time LiDAR motion behavior"
+    },
+    "LIDAR-003": {
+      "available": true,
+      "compare_ref": "comparisons.sim_lidar.multi_hit.overall",
+      "family": "sim_lidar",
+      "overall": true,
+      "status": "matched",
+      "title": "Multi-hit LiDAR ordering and reflected directions"
+    },
+    "RCS-001": {
+      "available": true,
+      "compare_ref": "comparisons.sim_rcs.cases.broadside",
+      "family": "sim_rcs",
+      "overall": true,
+      "status": "matched",
+      "title": "Single-object RCS baseline at broadside"
+    },
+    "RCS-002": {
+      "available": true,
+      "compare_ref": "comparisons.sim_rcs.sweep.overall",
+      "family": "sim_rcs",
+      "overall": true,
+      "status": "matched",
+      "title": "Angle-sweep RCS main-lobe shape"
+    },
+    "RCS-003": {
+      "available": true,
+      "compare_ref": "comparisons.sim_rcs.polarization.overall",
+      "family": "sim_rcs",
+      "overall": true,
+      "status": "matched",
+      "title": "Polarization discrimination at broadside"
+    },
+    "SIM-MESH-001": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.mesh_target.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Static mesh-target sim_radar contract"
+    },
+    "SIM-MESH-002": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.mesh_aspect.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Mesh aspect-sensitivity trend in sim_radar"
+    },
+    "SIM-PT-001": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_target.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Minimal point-target sim_radar contract"
+    },
+    "SIM-PT-002": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "MIMO ordering for point-target sim_radar"
+    },
+    "SIM-PT-003": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.seed_repeat.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Seed and noise behavior for sim_radar"
+    },
+    "SIM-PT-004": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_multi.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Two-point-target range-profile separation"
+    },
+    "SIM-PT-005": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_multiframe.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "MIMO multi-frame flattening for point-target sim_radar"
+    },
+    "SIM-PT-006": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_phase.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Point-target phase rotation for sim_radar"
+    },
+    "SIM-PT-007": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_moving_doppler.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Single-frame moving point-target Doppler response"
+    },
+    "SIM-PT-008": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO point-target spatial phase"
+    },
+    "SIM-PT-009": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_moving.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis moving MIMO point-target Doppler and spatial phase"
+    },
+    "SIM-PT-010": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_moving_multiframe.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis moving MIMO multi-frame point-target contract"
+    },
+    "SIM-PT-011": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_moving_doppler_negative.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Negative-radial-speed point-target Doppler direction"
+    },
+    "SIM-PT-012": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_moving_negative.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis negative-speed MIMO point-target Doppler and spatial phase"
+    },
+    "SIM-PT-013": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_moving_negative_multiframe.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis negative-speed MIMO multi-frame point-target contract"
+    },
+    "SIM-PT-014": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_static_moving.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Static-plus-moving point-target range-Doppler separation"
+    },
+    "SIM-PT-015": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_static_moving_negative.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Static-plus-negative-moving point-target range-Doppler separation"
+    },
+    "SIM-PT-016": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_moving.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-moving point-target joint contract"
+    },
+    "SIM-PT-017": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_moving_negative.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-negative-moving point-target joint contract"
+    },
+    "SIM-PT-018": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_moving_multiframe.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-moving multi-frame point-target joint contract"
+    },
+    "SIM-PT-019": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_moving_negative_multiframe.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-negative-moving multi-frame point-target joint contract"
+    },
+    "SIM-PT-020": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_static_static_moving.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Static-plus-static-plus-moving point-target range-Doppler separation"
+    },
+    "SIM-PT-021": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_static_static_moving_negative.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Static-plus-static-plus-negative-moving point-target range-Doppler separation"
+    },
+    "SIM-PT-022": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_static_moving.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-static-plus-moving point-target joint contract"
+    },
+    "SIM-PT-023": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_static_moving_negative.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-static-plus-negative-moving point-target joint contract"
+    },
+    "SIM-PT-024": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_static_moving_multiframe.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-static-plus-moving multi-frame point-target joint contract"
+    },
+    "SIM-PT-025": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_static_moving_negative_multiframe.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-static-plus-negative-moving multi-frame point-target joint contract"
+    },
+    "SIM-PT-026": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_static_static_moving_moving.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Static-plus-static-plus-moving-plus-moving four-target separation"
+    },
+    "SIM-PT-027": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_static_static_moving_moving_negative.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Static-plus-static-plus-negative-moving-plus-negative-moving four-target separation"
+    },
+    "SIM-PT-028": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_static_moving_moving.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-static-plus-moving-plus-moving four-target joint contract"
+    },
+    "SIM-PT-029": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_static_moving_moving_multiframe.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-static-plus-moving-plus-moving multi-frame four-target joint contract"
+    },
+    "SIM-PT-030": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_static_mixed_sign.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-static-plus-mixed-sign-moving four-target joint contract"
+    },
+    "SIM-PT-031": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_static_mixed_sign_multiframe.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-static-plus-mixed-sign-moving multi-frame four-target joint contract"
+    },
+    "SIM-PT-032": {
+      "available": true,
+      "compare_ref": "comparisons.sim_radar.point_mimo_offaxis_static_static_moving_moving_negative_multiframe.overall",
+      "family": "sim_radar",
+      "overall": true,
+      "status": "matched",
+      "title": "Off-axis MIMO static-plus-static-plus-negative-moving-plus-negative-moving multi-frame four-target accepted-band contract"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+.venv*/
+.local-runtime/
+
+radarsimpy
+radarsimpy_macos/
+radarsimpy_macos_arm/
+
+radarsimpy_origin/.DS_Store
+radarsimpy_origin/*.pyd
+radarsimpy_origin/*.dll
+radarsimpy_origin/license_RadarSimPy_*.lic
+radarsimpy_origin/lib/*.pyd

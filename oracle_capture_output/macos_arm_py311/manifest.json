@@ -1,0 +1,3187 @@
+{
+  "captured_at_utc": "2026-04-05T18:53:02.134396+00:00",
+  "captures": {
+    "sim_lidar": {
+      "baseline": {
+        "ok": true,
+        "summary": {
+          "dtype": "[('positions', '<f4', (3,)), ('directions', '<f4', (3,))]",
+          "fields": [
+            "positions",
+            "directions"
+          ],
+          "kind": "ndarray",
+          "shape": [
+            1
+          ]
+        }
+      },
+      "moving": {
+        "ok": true,
+        "summary": {
+          "dtype": "[('positions', '<f4', (3,)), ('directions', '<f4', (3,))]",
+          "fields": [
+            "positions",
+            "directions"
+          ],
+          "kind": "ndarray",
+          "shape": [
+            1
+          ]
+        }
+      },
+      "multi_hit": {
+        "ok": true,
+        "summary": {
+          "dtype": "[('positions', '<f4', (3,)), ('directions', '<f4', (3,))]",
+          "fields": [
+            "positions",
+            "directions"
+          ],
+          "kind": "ndarray",
+          "shape": [
+            3
+          ]
+        }
+      }
+    },
+    "sim_radar": {
+      "dry_run": {
+        "ok": true,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "mesh_aspect": {
+        "broadside_gt_edge_on": true,
+        "broadside_max_abs": 1.8897375568949118e-05,
+        "edge_on_max_abs": 0.0,
+        "ok": true
+      },
+      "mesh_target": {
+        "ok": true,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo": {
+        "ok": true,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_multiframe": {
+        "ok": true,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis": {
+        "channel_phase_degrees": [
+          1.529153350323401e-17,
+          -53.92663720684207,
+          -88.96560917636774,
+          -142.89224639321498
+        ],
+        "ok": true,
+        "peak_sample_index": 2,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_moving": {
+        "channel_phase_degrees": [
+          1.4615999853798485e-17,
+          -53.926632892950614,
+          -88.96560206436656,
+          -142.89223496898987
+        ],
+        "doppler_peak": 1,
+        "ok": true,
+        "phase_sample_index": 2,
+        "range_peak": 67,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_moving_multiframe": {
+        "doppler_peak": 1,
+        "frame0_channel_phase_degrees": [
+          1.4615999853798485e-17,
+          -53.926632892950614,
+          -88.96560206436656,
+          -142.89223496898987
+        ],
+        "frame_block_size": 4,
+        "ok": true,
+        "phase_sample_index": 2,
+        "range_peak": 67,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_moving_negative": {
+        "channel_phase_degrees": [
+          1.8272289833643288e-16,
+          -53.926641517398465,
+          -88.96561629170397,
+          -142.89225782077511
+        ],
+        "doppler_peak": 3,
+        "ok": true,
+        "phase_sample_index": 2,
+        "range_peak": 67,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_moving_negative_multiframe": {
+        "doppler_peak": 3,
+        "frame0_channel_phase_degrees": [
+          1.8272289833643288e-16,
+          -53.926641517398465,
+          -88.96561629170397,
+          -142.89225782077511
+        ],
+        "frame_block_size": 4,
+        "ok": true,
+        "phase_sample_index": 2,
+        "range_peak": 67,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_moving": {
+        "channel_phase_degrees": [
+          -4.214865258902181e-16,
+          -0.7474548457108571,
+          5.965581547660788,
+          17.884957206668552
+        ],
+        "moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.0005050788408196003,
+        "static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_moving_multiframe": {
+        "frame0_channel_phase_degrees": [
+          -4.214865258902181e-16,
+          -0.7474548457108571,
+          5.965581547660788,
+          17.884957206668552
+        ],
+        "frame_block_size": 4,
+        "moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.0005050788408196003,
+        "static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_moving_negative": {
+        "channel_phase_degrees": [
+          6.388272732877847e-16,
+          -0.5648441608652288,
+          6.3194375167001064,
+          18.28330490484372
+        ],
+        "moving_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.0005049055877276123,
+        "static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_moving_negative_multiframe": {
+        "frame0_channel_phase_degrees": [
+          6.388272732877847e-16,
+          -0.5648441608652288,
+          6.3194375167001064,
+          18.28330490484372
+        ],
+        "frame_block_size": 4,
+        "moving_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.0005049055877276123,
+        "static_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_static_mixed_sign": {
+        "channel_phase_degrees": [
+          4.243375776099334e-16,
+          75.94319054230907,
+          -70.98459559755906,
+          11.577133180299716
+        ],
+        "moving_neg_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "moving_pos_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.0014906735498039618,
+        "static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_static_mixed_sign_multiframe": {
+        "frame0_channel_phase_degrees": [
+          4.243375776099334e-16,
+          75.94319054230907,
+          -70.98459559755906,
+          11.577133180299716
+        ],
+        "frame_block_size": 4,
+        "moving_neg_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "moving_pos_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.0014906735498039618,
+        "static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_static_moving": {
+        "channel_phase_degrees": [
+          1.0618164105514601e-15,
+          -0.09066677526626975,
+          9.256200117755256,
+          24.715774676600905
+        ],
+        "moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.0005212229426087575,
+        "static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_static_moving_moving": {
+        "channel_phase_degrees": [
+          1.1814056866520706e-15,
+          75.8202593486482,
+          -70.99195468837051,
+          11.469165766290795
+        ],
+        "moving_a_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "moving_b_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.001491329371348064,
+        "static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_static_moving_moving_multiframe": {
+        "frame0_channel_phase_degrees": [
+          1.1814056866520706e-15,
+          75.8202593486482,
+          -70.99195468837051,
+          11.469165766290795
+        ],
+        "frame_block_size": 4,
+        "moving_a_peaks": [
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            14
+          ]
+        ],
+        "moving_b_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.001491329371348064,
+        "static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_static_moving_moving_negative_multiframe": {
+        "frame0_channel_phase_degrees": [
+          1.5074645011474394e-15,
+          75.71873238188022,
+          -71.30602714504644,
+          11.49882951433232
+        ],
+        "frame_block_size": 4,
+        "moving_a_peaks": [
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            3,
+            13
+          ]
+        ],
+        "moving_b_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.001501983822741093,
+        "static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_static_moving_multiframe": {
+        "frame0_channel_phase_degrees": [
+          1.0618164105514601e-15,
+          -0.09066677526626975,
+          9.256200117755256,
+          24.715774676600905
+        ],
+        "frame_block_size": 4,
+        "moving_peaks": [
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ],
+          [
+            1,
+            67
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.0005212229426087575,
+        "static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_static_moving_negative": {
+        "channel_phase_degrees": [
+          3.0006615125908375e-17,
+          0.1597214391665704,
+          9.734548956940225,
+          25.160308817160956
+        ],
+        "moving_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.000520820385199818,
+        "static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              4,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_mimo_offaxis_static_static_moving_negative_multiframe": {
+        "frame0_channel_phase_degrees": [
+          3.0006615125908375e-17,
+          0.1597214391665704,
+          9.734548956940225,
+          25.160308817160956
+        ],
+        "frame_block_size": 4,
+        "moving_peaks": [
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ],
+          [
+            3,
+            67
+          ]
+        ],
+        "ok": true,
+        "phase_sample_index": 2,
+        "profile_norm": 0.000520820385199818,
+        "static_a_peaks": [
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            27
+          ]
+        ],
+        "static_b_peaks": [
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            47
+          ]
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              8,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_moving_doppler": {
+        "doppler_peak": 1,
+        "ok": true,
+        "range_peak": 67,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_moving_doppler_negative": {
+        "doppler_peak": 3,
+        "ok": true,
+        "range_peak": 67,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_multi": {
+        "ok": true,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_phase": {
+        "ok": true,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_static_moving": {
+        "moving_peak": [
+          1,
+          67
+        ],
+        "ok": true,
+        "profile_norm": 0.000505218317222589,
+        "static_peak": [
+          0,
+          27
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_static_moving_negative": {
+        "moving_peak": [
+          3,
+          67
+        ],
+        "ok": true,
+        "profile_norm": 0.0005046704733490904,
+        "static_peak": [
+          0,
+          27
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_static_static_moving": {
+        "moving_peak": [
+          1,
+          67
+        ],
+        "ok": true,
+        "profile_norm": 0.0005214138298270292,
+        "static_a_peak": [
+          0,
+          27
+        ],
+        "static_b_peak": [
+          0,
+          47
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_static_static_moving_moving": {
+        "moving_a_peak": [
+          1,
+          14
+        ],
+        "moving_b_peak": [
+          1,
+          67
+        ],
+        "ok": true,
+        "profile_norm": 0.0015039268742505028,
+        "static_a_peak": [
+          0,
+          27
+        ],
+        "static_b_peak": [
+          0,
+          47
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_static_static_moving_moving_negative": {
+        "moving_a_peak": [
+          3,
+          13
+        ],
+        "moving_b_peak": [
+          3,
+          66
+        ],
+        "ok": true,
+        "profile_norm": 0.0014990972402817075,
+        "static_a_peak": [
+          0,
+          27
+        ],
+        "static_b_peak": [
+          0,
+          47
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_static_static_moving_negative": {
+        "moving_peak": [
+          3,
+          67
+        ],
+        "ok": true,
+        "profile_norm": 0.0005205653028833944,
+        "static_a_peak": [
+          0,
+          27
+        ],
+        "static_b_peak": [
+          0,
+          47
+        ],
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "point_target": {
+        "ok": true,
+        "summary": {
+          "baseband": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "interference": null,
+          "noise": {
+            "complex": true,
+            "dtype": "complex128",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          },
+          "timestamp": {
+            "dtype": "float64",
+            "kind": "ndarray",
+            "shape": [
+              1,
+              4,
+              160
+            ]
+          }
+        }
+      },
+      "seed_repeat": {
+        "baseband_allclose": true,
+        "noise_allclose": false,
+        "ok": true
+      }
+    },
+    "sim_rcs": {
+      "broadside": {
+        "ok": true,
+        "summary": 824775.9281763812
+      },
+      "edge_on": {
+        "ok": true,
+        "summary": 0.0
+      },
+      "normal_incidence": {
+        "ok": true,
+        "summary": 0.0
+      },
+      "obs_backscatter": {
+        "ok": true,
+        "summary": 824775.9281763812
+      },
+      "obs_forwardscatter": {
+        "ok": true,
+        "summary": 0.0
+      },
+      "obs_phi_sweep": {
+        "ok": true,
+        "summary": {
+          "dtype": "float64",
+          "kind": "ndarray",
+          "shape": [
+            7
+          ]
+        }
+      },
+      "observation_trend": {
+        "backscatter": 824775.9281763812,
+        "backscatter_gt_forwardscatter": true,
+        "forwardscatter": 0.0,
+        "ok": true
+      },
+      "polarization_cases": {
+        "case_names": [
+          "co_pol",
+          "cross_y",
+          "cross_x",
+          "cross_xy"
+        ],
+        "co_pol": 824775.9281763812,
+        "co_pol_gt_cross": true,
+        "max_cross_pol": 3.092414416966353e-27,
+        "ok": true
+      },
+      "sweep_analysis": {
+        "first_segment_monotonic_decrease": true,
+        "ok": true,
+        "peak_index": 0,
+        "peak_obs_phi": 0.0,
+        "tail_quiet": true,
+        "tail_to_peak_ratio": 3.7769819272503284e-07
+      },
+      "trend": {
+        "broadside": 824775.9281763812,
+        "broadside_gt_edge_on": true,
+        "edge_on": 0.0,
+        "ok": true
+      }
+    }
+  },
+  "license": {
+    "get_license_info": {
+      "ok": true,
+      "summary": "License Status: Licensed\nLicensed to: SEONGCHEOL JEONG\nProduct: RadarSimPy\nLicense Platform: All\nCurrent Platform: macOS\nDays Remaining: 151"
+    },
+    "is_licensed": {
+      "ok": true,
+      "summary": true
+    },
+    "set_license": {
+      "ok": true,
+      "summary": null
+    }
+  },
+  "metadata": {
+    "author": "RadarSimX",
+    "email": "info@radarsimx.com",
+    "url": "https://radarsimx.com",
+    "version": "15.1.0"
+  },
+  "module_file": "/Users/seongcheoljeong/Documents/RadarSimPy/radarsimpy/__init__.py",
+  "module_name": "radarsimpy",
+  "scenario_index": {
+    "LIDAR-001": {
+      "artifact_paths": [
+        "artifacts/sim_lidar_hits.npy"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_lidar_hits.npy": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_lidar.baseline",
+      "family": "sim_lidar",
+      "status": "captured",
+      "title": "Baseline LiDAR point-cloud contract"
+    },
+    "LIDAR-002": {
+      "artifact_paths": [
+        "artifacts/sim_lidar_moving_hits.npy"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_lidar_moving_hits.npy": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_lidar.moving",
+      "family": "sim_lidar",
+      "status": "captured",
+      "title": "Frame-time LiDAR motion behavior"
+    },
+    "LIDAR-003": {
+      "artifact_paths": [
+        "artifacts/sim_lidar_multi_hits.npy"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_lidar_multi_hits.npy": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_lidar.multi_hit",
+      "family": "sim_lidar",
+      "status": "captured",
+      "title": "Multi-hit LiDAR ordering and reflected directions"
+    },
+    "RCS-001": {
+      "artifact_paths": [],
+      "artifacts_present": {},
+      "capture_ok": true,
+      "capture_ref": "captures.sim_rcs.broadside",
+      "family": "sim_rcs",
+      "status": "captured",
+      "title": "Single-object RCS baseline at broadside"
+    },
+    "RCS-002": {
+      "artifact_paths": [
+        "artifacts/sim_rcs_obs_phi_sweep.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_rcs_obs_phi_sweep.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_rcs.obs_phi_sweep",
+      "family": "sim_rcs",
+      "status": "captured",
+      "title": "Angle-sweep RCS main-lobe shape"
+    },
+    "RCS-003": {
+      "artifact_paths": [
+        "artifacts/sim_rcs_polarization_cases.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_rcs_polarization_cases.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_rcs.polarization_cases",
+      "family": "sim_rcs",
+      "status": "captured",
+      "title": "Polarization discrimination at broadside"
+    },
+    "SIM-MESH-001": {
+      "artifact_paths": [
+        "artifacts/sim_radar_mesh_target.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_mesh_target.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.mesh_target",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Static mesh-target sim_radar contract"
+    },
+    "SIM-MESH-002": {
+      "artifact_paths": [
+        "artifacts/sim_radar_mesh_broadside.npz",
+        "artifacts/sim_radar_mesh_edge_on.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_mesh_broadside.npz": true,
+        "artifacts/sim_radar_mesh_edge_on.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.mesh_aspect",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Mesh aspect-sensitivity trend in sim_radar"
+    },
+    "SIM-PT-001": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_target.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_target.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_target",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Minimal point-target sim_radar contract"
+    },
+    "SIM-PT-002": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "MIMO ordering for point-target sim_radar"
+    },
+    "SIM-PT-003": {
+      "artifact_paths": [],
+      "artifacts_present": {},
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.seed_repeat",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Seed and noise behavior for sim_radar"
+    },
+    "SIM-PT-004": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_multi.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_multi.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_multi",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Two-point-target range-profile separation"
+    },
+    "SIM-PT-005": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_multiframe.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_multiframe.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_multiframe",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "MIMO multi-frame flattening for point-target sim_radar"
+    },
+    "SIM-PT-006": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_phase.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_phase.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_phase",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Point-target phase rotation for sim_radar"
+    },
+    "SIM-PT-007": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_moving_doppler.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_moving_doppler.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_moving_doppler",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Single-frame moving point-target Doppler response"
+    },
+    "SIM-PT-008": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO point-target spatial phase"
+    },
+    "SIM-PT-009": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_moving.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_moving.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_moving",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis moving MIMO point-target Doppler and spatial phase"
+    },
+    "SIM-PT-010": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_moving_multiframe.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_moving_multiframe.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_moving_multiframe",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis moving MIMO multi-frame point-target contract"
+    },
+    "SIM-PT-011": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_moving_doppler_negative.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_moving_doppler_negative.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_moving_doppler_negative",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Negative-radial-speed point-target Doppler direction"
+    },
+    "SIM-PT-012": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_moving_negative.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_moving_negative.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_moving_negative",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis negative-speed MIMO point-target Doppler and spatial phase"
+    },
+    "SIM-PT-013": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_moving_negative_multiframe.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_moving_negative_multiframe.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_moving_negative_multiframe",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis negative-speed MIMO multi-frame point-target contract"
+    },
+    "SIM-PT-014": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_static_moving.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_static_moving.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_static_moving",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Static-plus-moving point-target range-Doppler separation"
+    },
+    "SIM-PT-015": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_static_moving_negative.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_static_moving_negative.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_static_moving_negative",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Static-plus-negative-moving point-target range-Doppler separation"
+    },
+    "SIM-PT-016": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_moving.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_moving.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_moving",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-moving point-target joint contract"
+    },
+    "SIM-PT-017": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_moving_negative.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_moving_negative.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_moving_negative",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-negative-moving point-target joint contract"
+    },
+    "SIM-PT-018": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_moving_multiframe.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_moving_multiframe.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_moving_multiframe",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-moving multi-frame point-target joint contract"
+    },
+    "SIM-PT-019": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_moving_negative_multiframe.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_moving_negative_multiframe.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_moving_negative_multiframe",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-negative-moving multi-frame point-target joint contract"
+    },
+    "SIM-PT-020": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_static_static_moving.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_static_static_moving.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_static_static_moving",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Static-plus-static-plus-moving point-target range-Doppler separation"
+    },
+    "SIM-PT-021": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_static_static_moving_negative.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_static_static_moving_negative.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_static_static_moving_negative",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Static-plus-static-plus-negative-moving point-target range-Doppler separation"
+    },
+    "SIM-PT-022": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_static_moving",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-static-plus-moving point-target joint contract"
+    },
+    "SIM-PT-023": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_negative.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_negative.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_static_moving_negative",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-static-plus-negative-moving point-target joint contract"
+    },
+    "SIM-PT-024": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_multiframe.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_multiframe.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_static_moving_multiframe",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-static-plus-moving multi-frame point-target joint contract"
+    },
+    "SIM-PT-025": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_negative_multiframe.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_negative_multiframe.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_static_moving_negative_multiframe",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-static-plus-negative-moving multi-frame point-target joint contract"
+    },
+    "SIM-PT-026": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_static_static_moving_moving.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_static_static_moving_moving.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_static_static_moving_moving",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Static-plus-static-plus-moving-plus-moving four-target separation"
+    },
+    "SIM-PT-027": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_static_static_moving_moving_negative.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_static_static_moving_moving_negative.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_static_static_moving_moving_negative",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Static-plus-static-plus-negative-moving-plus-negative-moving four-target separation"
+    },
+    "SIM-PT-028": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_moving.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_moving.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_static_moving_moving",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-static-plus-moving-plus-moving four-target joint contract"
+    },
+    "SIM-PT-029": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_moving_multiframe.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_moving_multiframe.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_static_moving_moving_multiframe",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-static-plus-moving-plus-moving multi-frame four-target joint contract"
+    },
+    "SIM-PT-030": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_mixed_sign.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_mixed_sign.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_static_mixed_sign",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-static-plus-mixed-sign-moving four-target joint contract"
+    },
+    "SIM-PT-031": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_mixed_sign_multiframe.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_mixed_sign_multiframe.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_static_mixed_sign_multiframe",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-static-plus-mixed-sign-moving multi-frame four-target joint contract"
+    },
+    "SIM-PT-032": {
+      "artifact_paths": [
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_moving_negative_multiframe.npz"
+      ],
+      "artifacts_present": {
+        "artifacts/sim_radar_point_mimo_offaxis_static_static_moving_moving_negative_multiframe.npz": true
+      },
+      "capture_ok": true,
+      "capture_ref": "captures.sim_radar.point_mimo_offaxis_static_static_moving_moving_negative_multiframe",
+      "family": "sim_radar",
+      "status": "captured",
+      "title": "Off-axis MIMO static-plus-static-plus-negative-moving-plus-negative-moving multi-frame four-target accepted-band contract"
+    }
+  },
+  "top_level_inventory": {
+    "Radar": {
+      "available": true,
+      "signature": "(transmitter: 'Transmitter', receiver: 'Receiver', frame_time: Union[float, int, List[Union[float, int]], Tuple[Union[float, int], ...], numpy.ndarray[tuple[Any, ...], numpy.dtype[~_ScalarT]]] = 0, location: Union[Tuple[float, float, float], List[float]] = (0, 0, 0), speed: Union[Tuple[float, float, float], List[float]] = (0, 0, 0), rotation: Union[Tuple[float, float, float], List[float]] = (0, 0, 0), rotation_rate: Union[Tuple[float, float, float], List[float]] = (0, 0, 0), seed: Optional[int] = None, **kwargs)"
+    },
+    "Receiver": {
+      "available": true,
+      "signature": "(fs: float, noise_figure: float = 10, rf_gain: float = 0, load_resistor: float = 500, baseband_gain: float = 0, bb_type: str = 'complex', channels: Optional[List[Dict]] = None)"
+    },
+    "Transmitter": {
+      "available": true,
+      "signature": "(f: Union[float, List, numpy.ndarray[tuple[Any, ...], numpy.dtype[~_ScalarT]]], t: Union[float, List, numpy.ndarray[tuple[Any, ...], numpy.dtype[~_ScalarT]]], tx_power: float = 0, pulses: int = 1, prp: Union[float, List, numpy.ndarray[tuple[Any, ...], numpy.dtype[~_ScalarT]], NoneType] = None, f_offset: Union[float, List, numpy.ndarray[tuple[Any, ...], numpy.dtype[~_ScalarT]], NoneType] = None, pn_f: Optional[numpy.ndarray[tuple[Any, ...], numpy.dtype[~_ScalarT]]] = None, pn_power: Optional[numpy.ndarray[tuple[Any, ...], numpy.dtype[~_ScalarT]]] = None, channels: Optional[List[Dict]] = None)"
+    },
+    "check_installation": {
+      "available": true,
+      "signature": "()"
+    },
+    "get_info": {
+      "available": true,
+      "signature": "()"
+    },
+    "get_license_info": {
+      "available": true,
+      "signature": "()"
+    },
+    "get_version": {
+      "available": true,
+      "signature": "()"
+    },
+    "hello": {
+      "available": true,
+      "signature": "()"
+    },
+    "is_licensed": {
+      "available": true,
+      "signature": "()"
+    },
+    "print_info": {
+      "available": true,
+      "signature": "()"
+    },
+    "set_license": {
+      "available": true,
+      "signature": "(license_file_path=None)"
+    },
+    "sim_lidar": {
+      "available": true,
+      "signature": "(lidar, targets, frame_time=0)"
+    },
+    "sim_radar": {
+      "available": true,
+      "signature": "(radar, targets, density=1, level=None, interf=None, ray_filter=None, back_propagating=False, device='gpu', log_path=None, dry_run=False)"
+    },
+    "sim_rcs": {
+      "available": true,
+      "signature": "(targets, f, inc_phi, inc_theta, inc_pol=[0, 0, 1], obs_phi=None, obs_theta=None, obs_pol=None, density=1.0)"
+    }
+  }
+}
