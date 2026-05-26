@@ -12,6 +12,7 @@ Current phase coverage:
 - `Receiver`
 - `Radar`
 - `mesh_kit`
+- pulse modulation helpers for TDM/BPM-style channel codes
 - `sim_radar`
 - `sim_lidar`
 - `sim_rcs`
@@ -27,10 +28,20 @@ import platform
 import sys
 
 from . import mesh_kit
+from . import modulation
 from . import processing
 from . import simulator
 from . import tools
 from .license import get_license_info, is_licensed, set_license
+from .modulation import (
+    apply_pulse_modulation,
+    bpm,
+    bpm_channels,
+    bpm_code,
+    tdm,
+    tdm_channels,
+    tdm_code,
+)
 from .radar import Radar
 from .receiver import Receiver
 from .simulator import sim_lidar, sim_radar, sim_rcs
@@ -42,7 +53,7 @@ __email__ = "info@radarsimx.com"
 __url__ = "https://radarsimx.com"
 __license__ = "Proprietary"
 __description__ = "A comprehensive radar simulation library for Python"
-__workspace_version__ = "15.1.0-phase8"
+__workspace_version__ = "15.1.0-phase9"
 
 __all__ = [
     "Radar",
@@ -54,8 +65,16 @@ __all__ = [
     "set_license",
     "is_licensed",
     "get_license_info",
+    "apply_pulse_modulation",
+    "bpm",
+    "bpm_channels",
+    "bpm_code",
+    "tdm",
+    "tdm_channels",
+    "tdm_code",
     "processing",
     "simulator",
+    "modulation",
     "mesh_kit",
     "tools",
     "__version__",
@@ -93,6 +112,7 @@ def get_info():
             "processing": "Signal processing algorithms",
             "tools": "Analysis and characterization tools",
             "mesh_kit": "3D mesh file loading utilities",
+            "modulation": "TDM/BPM pulse modulation helpers",
         },
         "simulation_engines": {
             "sim_radar": "Radar baseband simulation",
