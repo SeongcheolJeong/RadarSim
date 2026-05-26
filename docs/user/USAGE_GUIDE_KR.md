@@ -244,7 +244,44 @@ rsp.sim_radar(
 
 즉, 현재 whitebox에서는 point target, MIMO, multi-frame, static mesh target, 기본 range-Doppler workflow 중심으로 사용하는 것이 가장 안전합니다.
 
-## 7. `tools` 사용법
+## 7. TDM / BPM pulse modulation helper
+
+whitebox는 `Transmitter` channel dict의 `pulse_amp`, `pulse_phs`를 만드는 helper를 제공합니다.
+
+TDM helper는 pulse마다 한 TX만 켜는 pulse mask를 만듭니다.
+
+```python
+channels = [
+    {"location": [0.0, 0.0, 0.0]},
+    {"location": [0.0, 0.05, 0.0]},
+]
+
+tx = rsp.Transmitter(
+    f=[76.0e9, 76.2e9],
+    t=[0.0, 40e-6],
+    pulses=4,
+    prp=60e-6,
+    channels=rsp.tdm_channels(channels, pulses=4),
+)
+```
+
+BPM helper는 Hadamard 기반 binary phase code를 반복 적용합니다. 2-TX 기본값은 TX1 phase가 `[0, 180, 0, 180, ...]`로 반복됩니다.
+
+```python
+channels = rsp.bpm_channels(channels, pulses=4)
+code = rsp.bpm_code(tx_channels=2, pulses=4)
+
+print(code["pulse_amp"])
+print(code["pulse_phs"])
+```
+
+주의할 점:
+
+- 현재 `sim_radar()` 결과는 이미 TX x RX virtual channel로 분리되어 있습니다
+- 따라서 helper는 실제 수신 mixture를 BPM decode하는 물리 모델이 아니라, existing `pulse_amp`/`pulse_phs` 입력을 안전하게 생성하는 utility입니다
+- 3-TX 같은 non-power-of-two BPM은 직접 `code_matrix`를 넘겨야 합니다
+
+## 8. `tools` 사용법
 
 `tools`에는 ROC와 탐지 성능 계산 함수가 들어 있습니다.
 
